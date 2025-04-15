@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Annuaire – Artistes 3D</title>
+  <style>
+    /* ----- BASE ----- */
+    body {
+      margin: 0;
+      padding: 30px 20px;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #9333ea);
+      color: white;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 3em;
+    }
+
+    h2.category {
+      margin-top: 60px;
+      margin-bottom: 20px;
+      font-size: 2em;
+      text-align: center;
+      border-bottom: 2px solid rgba(255,255,255,0.3);
+      padding-bottom: 10px;
+    }
+
+    /* ----- GRILLE 5 COLONNES ----- */
+    .grid-5 { 
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 20px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* Responsive */
+    @media (max-width: 1100px) {
+      .grid-5 {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+    @media (max-width: 800px) {
+      .grid-5 {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 500px) {
+      .grid-5 {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ----- CARTE MEMBRE ----- */
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 15px;
+      padding: 20px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      cursor: pointer;
+      text-align: center;
+      text-decoration: none;
+      color: white;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    }
+
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 15px;
+      border: 3px solid white;
+    }
+
+    .card h3 {
+      font-size: 1.2em;
+      margin-bottom: 6px;
+    }
+
+    .card p {
+      font-size: 0.95em;
+      text-align : center;
+      opacity: 0.9;
+      margin-bottom: 5px;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 60px;
+      color: rgba(255,255,255,0.6);
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Annuaire – RIWA</h1>
+
+  <h2 class="category">Artistes 3D</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Ugho DOUBLECOURT</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Michaël SPADA</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Océane BRASSELET</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Anais LEBOUCHER</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Marius MILLANT</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Artistes 2D</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Amélie VERDE FERREIRA</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Jimmy PRA</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Eloïse NICOULEAU</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Développeurs</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Julien FABREGOULE</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Johann BOIS</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Romain BOISSEAU</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Benjamin ARHENCET</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Nattan LE GUYADER</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Techs Artistes</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Benjamin TURCAT</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Gabriel BRAVIN</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Talent Vidéo</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Neil TRACOL</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Jeremy JAILLET</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Marketing</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Léa PAYET-MAUGERON</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Baptiste SANNA</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Mathieu DUSSART</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Isis RUFFEL</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Grégoire WIESER</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Yohann QUEMPER</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Tristan EDIMO</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+
+   <h2 class="category">Sound Designer</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Valentin EICAR</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Lou-Mae EICAR</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+
+      <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Martin BOIGEAUD</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <h2 class="category">Aide Externe</h2>
+  <div class="grid-5">
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+      <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+      <h3>Adrien ECOLE</h3>
+      <p><strong>Modeleur 3D</strong></p>
+      <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+    </a>
+
+    <a href="https://linktr.ee/Michael_SPADA" class="card" target="_blank">
+        <img src="https://media.licdn.com/dms/image/v2/D4D35AQFNbb78GDxXMg/profile-framedphoto-shrink_800_800/profile-framedphoto-shrink_800_800/0/1736028936741?e=1745319600&v=beta&t=PKlPOFrGSNXXeAZp-IbM5NQGbHPTtxO69oINIA2hSSc" alt="John 3D">
+        <h3>Anthony GEORGEON</h3>
+        <p><strong>Modeleur 3D</strong></p>
+        <p>Je me suis occupé de la modélisation des 3 personnages présent en jeu, ainsi que de leur rig et de certaines animation simples sur Riwa. J'ai également été appelé en renfort sur l’environement en fin de projet (mise en place des salles, correction d'UV, block out).</p>
+      </a>
+  </div>
+
+  <footer>
+    © 2025 RIWA. Tous droits réservés.
+  </footer>
+
+</body>
+</html>
