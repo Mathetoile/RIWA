@@ -8,7 +8,7 @@ body {
     background: url('bg.png') no-repeat center center fixed;
     background-size: cover;
     color: #fff;
-overflow-x: hidden;
+    overflow-x: hidden;
 }
 
 .background-overlay {
@@ -61,18 +61,40 @@ overflow-x: hidden;
     background: rgba(255, 255, 255, 0.2);
   }
   
-  @media (max-width: 768px) {
-    .nav-links {
-      gap: 10px;
-      padding: 10px;
-    }
+
+
+  .burger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
   
-    .nav-links a {
-      font-size: 14px;
-      padding: 6px 8px;
-    }
+  .burger div {
+    width: 25px;
+    height: 3px;
+    background: white;
+    margin: 4px;
   }
 
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background: rgba(0,0,0,0.9);
+      position: absolute;
+      top: 60px;
+      left: 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .burger {
+      display: flex;
+    }
+  }
 h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
