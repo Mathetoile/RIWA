@@ -107,25 +107,23 @@ align-content: center;
 </head>
 <body>
 
-  <header class="navbar">
-    <nav class="nav-links">
-      <ul class="nav-links">
+  <div class="navbar">
+    <button id="menu-toggle" class="menu-toggle">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <div id="nav-links" class="nav-links">
       <a href="#artistes3d">Artistes 3D</a>
       <a href="#artistes2d">Artistes 2D</a>
       <a href="#developpeurs">Développeurs</a>
-      <a href="#techsartistes">Techs Artistes</a>
-      <a href="#talentvideo">Talent Vidéo</a>
+      <a href="#techs">Techs Artistes</a>
+      <a href="#video">Talent Vidéo</a>
       <a href="#marketing">Marketing</a>
       <a href="#eicar">EICAR</a>
-      <a href="#aideexterne">Aide Externe</a>
-    </ul>
-    <div class="burger">
-      <div></div>
-      <div></div>
-      <div></div>
+      <a href="#aide">Aide Externe</a>
     </div>
-  </nav>
-  </header>
+  </div>
 
   <h1><a href="https://drive.google.com/drive/folders/1R4NCfrTLvUiM2KIjtkrio11U7_UWr5de?usp=sharing" accesskey="1" title="Press Kit"><img id="logo" alt="RIWA" src="TITRE_RIWA_BLANC.svg" width="435" height="120" target="_blank"></a></h1>
 
@@ -386,6 +384,14 @@ align-content: center;
   <footer>
     © 2025 RIWA. Tous droits réservés.
   </footer>
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const navLinks = document.getElementById('nav-links');
 
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('show');
+    });
+  </script>
+</body>
 </body>
 </html>
