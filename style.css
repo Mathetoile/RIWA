@@ -26,6 +26,52 @@ body {
     text-align: center;
 }
 
+/* --- NAVBAR --- */
+.navbar {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: url('Fond.png') no-repeat center center;
+    border-radius: 12px;
+    padding: 8px 16px;
+  }
+  
+  .nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background 0.3s;
+  }
+  
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  @media (max-width: 768px) {
+    .nav-links {
+      gap: 10px;
+      padding: 10px;
+    }
+  
+    .nav-links a {
+      font-size: 14px;
+      padding: 6px 8px;
+    }
+  }
+
 h1 {
     margin-bottom: 2rem;
     font-size: 2rem;
@@ -63,3 +109,11 @@ ul {
     padding-left: 1rem;
     text-align: left;
 }
+
+
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 100px;
+  }
+  
